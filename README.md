@@ -1,17 +1,34 @@
-# absensi_fif_group
+# Absensi FIF Group
 
-A new Flutter project.
+Aplikasi absensi karyawan untuk Android, dibuat dengan Flutter sebagai tugas mata kuliah Pemrograman Bergerak.
 
-## Getting Started
+## Fitur
+- Login banyak akun (karyawan)
+- Absen masuk dan absen pulang
+- Pencatatan lokasi (GPS) saat absen
+- Foto selfie saat absen
+- Status kehadiran: Hadir atau Terlambat (batas masuk 08:00)
+- Riwayat absensi beserta foto, koordinat, dan jarak dari kantor
+- Halaman profil karyawan
 
-This project is a starting point for a Flutter application.
+## Akun demo
+| ID | Password | Peran |
+|----|----------|-------|
+| FIF001 | 123456 | Karyawan |
+| FIF002 | 123456 | Supervisor |
+| FIF003 | 123456 | Admin |
 
-A few resources to get you started if this is your first Flutter project:
+## Cara menjalankan
+1. Pasang [Flutter](https://docs.flutter.dev/get-started/install) dan Android SDK.
+2. Unduh atau clone repositori ini.
+3. Di folder proyek, jalankan:
+   ```
+   flutter pub get
+   flutter run
+   ```
+4. Sambungkan HP Android dengan USB debugging aktif, atau gunakan emulator.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Teknologi
+- Flutter (Dart)
+- geolocator (GPS)
+- image_picker (kamera)
